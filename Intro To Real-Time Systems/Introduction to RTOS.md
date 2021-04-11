@@ -151,7 +151,7 @@ An interrupt (software interrupt) is required to transfer from USER to KERNEL sp
 
 #### Family of Interrupts
 
-[image:3F3DF9A3-180F-4006-8ECA-2BA4F55E0315-94582-00023967E3C258A1/Screenshot 2021-04-11 at 16.13.41.png]
+[https://github.com/Darius0852/Embedded-Software/blob/main/images/RTOS1.png]
 
 - A TRAP is used in place of a “jump to subroutine”
 	- Jump to subroutine using the interrupt system.
@@ -200,7 +200,7 @@ The pointer to the function is needed so that it knows where the executable code
 ## Function Frame
 ### A function frame pointer has the following structure
 
-[image:B8ED414E-1AC4-4874-8B1E-8F0F7E2E06DC-94582-00023ECAFFF8BC27/Screenshot 2021-04-11 at 18.00.44.png]
+[https://github.com/Darius0852/Embedded-Software/blob/main/images/RTOS2.png]
 
 - Access to the “locals” and “arguments” is by adding a constant to the “frame pointer”.
 	- E.g. use (frame_pointer + (-2) to access “local2”
@@ -250,7 +250,7 @@ The pointer to the function is needed so that it knows where the executable code
 
 ### System viewed as a state transition diagram
 
-[image:0115B64C-CA53-403E-9EF8-3E3801FB25FE-94582-00023FDD7003FE93/Screenshot 2021-04-11 at 18.20.18.png]
+[https://github.com/Darius0852/Embedded-Software/blob/main/images/RTOS3.png]
 
 ### (1) State changes due to events and task actions
 ### (2) State change due to RTOS unit called the SCHEDULER 
@@ -273,7 +273,7 @@ The pointer to the function is needed so that it knows where the executable code
 - Involves the manipulation of pointers to process descriptors rather than the copying of the process descriptor
 	- Much more efficient
 
-[image:F5D57906-76FA-4701-87A3-13DC1D17E820-94582-0002407B60525492/Screenshot 2021-04-11 at 18.31.41.png]
+[https://github.com/Darius0852/Embedded-Software/blob/main/images/RTOS4.png]
 
 ## Task : thread of execution
 ### Refers to “shared code”
