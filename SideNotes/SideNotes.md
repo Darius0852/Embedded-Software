@@ -11,7 +11,8 @@ Frequently used terms in RTOS
 
 Preemptive Scheduling: In this type of scheduling, tasks run with equal time slice without considering the priorities.
 Priority-based Preemptive: High priority task will run first.
-Co-operative Scheduling: Context switching will happen only with the co-operation of running tasks. Task will run continuously until task yield is called.​
+Co-operative Scheduling: Context switching will happen only with the co-operation of running tasks. Task will run continuously until task yield is called.
+
 6. Kernel Objects: For signaling the task to perform some work, the synchronization process is used. To perform this process Kernel objects are used. Some Kernel objects are Events, Semaphores, Queues, Mutex, Mailboxes, etc. We will see how to use these objects in upcoming tutorials.
 
 From the above discussion, we have got some basic ideas about the RTOS concept and now we can implement the FreeRTOS project in Arduino. So, let's get started by installing FreeRTOS libraries in Arduino IDE.
